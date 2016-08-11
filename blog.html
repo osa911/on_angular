@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="fgBikeApp">
+
+  <head>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+        
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/ngStorage.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+           
+    <script>
+      var fgBikeApp = angular.module("fgBikeApp", ["ngStorage"]);
+ 
+     fgBikeApp.controller("fgBikeController", function($scope,$localStorage) {
+
+        $scope.storage = $localStorage.$default({
+          x: 42
+        });
+      });
+    </script>
+  </head>
+
+  <body ng-controller="fgBikeController">
+   
+  </body>
+
+</html>
