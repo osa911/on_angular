@@ -1,0 +1,63 @@
+<div class="bh-position-title">
+    <div class="uk-container uk-container-center">
+        <div class="uk-panel">
+            <h1>Лист ожиданий</h1>
+        </div>
+    </div>
+</div>
+
+<div class="bh-position bh-position-default">
+    <div class="uk-container uk-container-center">
+
+        <ul class="uk-breadcrumb">
+            <li><a ui-sref="home">Главная</a></li>
+            <li class="uk-active"><span>Лист ожиданий</span></li>
+        </ul>
+
+        <article class="uk-article">
+            <div class="uk-overflow-container">
+                <table class="uk-table uk-table-middle uk-text-nowrap">
+                    <thead>
+                        <tr>
+                            <th>Фото</th>
+                            <th>Название</th>
+                            <th class="uk-text-center">Цена</th>
+                            <th class="uk-text-center">Корзина</th>
+                            <th class="uk-text-center">Удалить</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item_w in wishlist">
+                            <td ng-repeat="item in items_arr" ng-if="item.id==item_w">
+                                <a href="">
+                                    <img ng-src="{{item.img_url_mini}}" width="100" height="75" alt="Product Image">
+                                </a>
+                            </td>
+                            <td ng-repeat="item in items_arr" ng-if="item.id==item_w">
+                                <a class="bh-text-uppercase uk-link-reset" href="">{{item.name}}</a><br>
+                                <span class="uk-text-muted uk-text-small">{{item.description}}</span>
+                            </td>
+                            <td ng-repeat="item in items_arr" ng-if="item.id==item_w" class="uk-text-center">
+                                <del>{{item.old_price}} грн.</del>
+                                <ins>{{item.price}} грн.</ins>
+                            </td>
+                            <td ng-repeat="item in items_arr" ng-if="item.id==item_w" class="uk-text-center"><button ng-click="add_to_cart(item)" class="uk-button">{{1 == readCartstatus(item.id) ? "Товар уже в корзине" : "Добавить в корзину"}}</button></td>
+                            <td ng-repeat="item in items_arr" ng-if="item.id==item_w" class="uk-text-center"><a ng-click="set_ls_wishlist(item)"><i class="uk-icon-times"></i></a></td>
+                        </tr>
+                     <!-- пока выкл
+                        <tr>
+                            <td colspan="6">
+                                <form class="uk-form">
+                                    <span class="uk-float-right">
+                                        <a href="#" class="uk-button uk-button-primary">Добавить все товары в корзину</a>
+                                    </span>
+                                </form>
+                            </td>
+                        </tr>-->
+                    </tbody>
+                </table>
+            </div>
+        </article>
+
+    </div>
+</div>

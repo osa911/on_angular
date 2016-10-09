@@ -1,0 +1,68 @@
+<!-- Логотип начало -->
+<div class="bh-position bh-position-padding-remove" data-uk-slideshow="{animation: 'fade', duration: 700}">
+	<ul class="uk-slideshow uk-slideshow-fullscreen bh-slideshow uk-overlay-active">
+		<li aria-hidden="false" class="uk-active">
+			<div class="uk-cover-background uk-position-cover" style="background-image: url(./images/bike.jpg);"></div>
+			<div class="uk-overlay-panel uk-flex uk-flex-center uk-flex-middle uk-text-center">
+				<div>
+					<p class="bh-teaser-subtitle-primary bh-text-uppercase uk-animation-slide-top bh-animation-delay-300">Summer 2016</p>
+					<h1 class="bh-teaser-headline uk-margin-remove uk-animation-fade bh-animation-delay-200">New Collection</h1>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<!-- Логотип конец -->
+
+<!-- ТОВАРЫ НА САЙТЕ начало -->
+<div class="bh-position bh-position-default">
+	<div class="uk-container uk-container-center">
+		<div class="uk-grid" data-uk-grid-margin data-uk-grid-match>
+			<div class="uk-width-large">
+				<article class="uk-article">
+					<div class="uk-grid"  data-uk-grid-margin>
+						<div fg-items class="uk-width-medium-1-3" ng-repeat="item in items_arr"></div>
+					</div>
+				</article>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- ТОВАРЫ НА САЙТЕ конец -->
+
+<!-- Контакты сайта и форма обратной связи начало -->
+<div class="bh-position bh-position-default">
+	<div class="uk-container uk-container-center">
+		<div class="uk-grid" data-uk-grid-margin>
+			<div fg-Contacts class="uk-width-large-1-3"></div>
+			<div fg-Contact-Form class="uk-width-medium-2-3"></div>
+		</div>
+	</div>
+</div>
+<!-- Контакты сайта и форма обратной связи конец -->
+
+<!-- Карта начало -->
+<div class="bh-position bh-position-primary bh-position-full bh-position-padding-remove">
+	<div id="pages-contact-map"></div>
+</div>
+<script>
+jQuery(function($) {
+    "use strict";
+    $(function() {
+        (function initmap() {
+            var mapElement = document.getElementById('pages-contact-map');
+            if (mapElement) {
+                var mapOptions = {
+                    scrollwheel: false,
+                    draggable: !$.UIkit.support.touch,
+                    zoom: 12,
+                    center: new google.maps.LatLng(50.4130949, 30.6140027),
+                    styles: [{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"stylers":[{"hue":"#00aaff"},{"saturation":-100},{"gamma":2.15},{"lightness":12}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"lightness":24}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":57}]}]
+                };
+                var map = new google.maps.Map(mapElement, mapOptions);
+            }
+        })();
+    });
+});
+</script>
+<!-- Карта конец -->

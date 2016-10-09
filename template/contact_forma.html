@@ -1,0 +1,31 @@
+<div class="uk-panel">
+	<form class="uk-form uk-form-stacked">
+		<div class="uk-grid" data-uk-margin="{cls:'uk-margin-top'}">
+			<div class="uk-width-1-1">
+				<div ng-show="send_succes" class="uk-alert uk-alert-success">
+	                <a ng-click="send_succes=false" href="" class="uk-alert-close uk-close"></a>
+	                <p>Ваше сообщение успешно отправлено.</p>
+	            </div>
+	            <div ng-show="send_failed" class="uk-alert uk-alert-danger">
+	                <a ng-click="send_failed=false" href="" class="uk-alert-close uk-close"></a>
+	                <p>При отправке возникли ошибки. Сообщение не отправленно.</p>
+	            </div>
+	        </div>
+			<div class="uk-width-1-1">
+				<label class="uk-form-label" for="form-contact-name">Имя</label>
+				<input ng-model="sender_name" type="text" placeholder="Ваше имя..." id="form-contact-name" class="uk-width-1-1 uk-form-large">
+			</div>
+			<div class="uk-width-1-1">
+				<label class="uk-form-label" for="form-contact-mail">E-Mail</label>
+				<input ng-model="email" type="text" placeholder="Ваш E-Mail..." id="form-contact-mail" class="uk-width-1-1 uk-form-large">
+			</div>
+			<div class="uk-width-1-1">
+				<label class="uk-form-label" for="form-contact-message">Сообщение</label>
+				<textarea ng-model="message" rows="6" placeholder="Ваше сообщение..." id="form-contact-message" class="uk-width-1-1 uk-form-large"></textarea>
+			</div>
+			<div class="uk-width-1-1">
+				<button ng-click="send_message(sender_name,email,message)" ng-disabled="send_succes || send_failed" class="uk-button bh-button">Отправить</button>
+			</div>
+		</div>
+	</form>
+</div>

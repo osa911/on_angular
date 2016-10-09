@@ -1,0 +1,31 @@
+<div id="offcanvas-cart" class="uk-offcanvas bh-offcanvas-light">
+	<div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+		<div class="uk-panel">
+			<h3 class="bh-headline-bottom-border uk-margin-remove"><span>Корзина</span></h3>
+			<div ng-show="cart.length">
+				<table class="bh-offcanvas-shopping-cart uk-table uk-table-middle uk-margin-small-top uk-margin-bottom-remove">
+				<tbody>
+					<tr ng-repeat="itemInCart in cart">
+						<td>
+							<a href="#"> <!-- сылка на товар-->
+								<img ng-src="{{readItemArr(itemInCart.item_id).img_url_mini}}" width="100" height="75" alt="Product Image">
+							</a>
+						</td>
+						<td>
+							<a class="bh-text-uppercase" href="#">{{readItemArr(itemInCart.item_id).name}}</a><br>
+							{{itemInCart.item_price}} грн.
+						</td>
+						<td class="uk-text-center"><a ng-click="delFromCart(itemInCart.item_id)"><i class="uk-icon-times"></i></a></td>
+					</tr>
+					
+				</tbody>
+			</table>
+			<a ui-sref="cart" class="uk-button uk-width-1-1">Открыть корзину</a>
+			<a ui-sref="checkout" class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-top">Оформить заказ</a>
+			</div>
+			<div ng-show="!cart.length">
+				<p class="bh-text-uppercase">Ваша корзина еще пуста.</p> 
+			</div>
+		</div>
+	</div>
+</div>

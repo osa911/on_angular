@@ -1,0 +1,29 @@
+<div class="bh-navbar">
+	<a class="bh-logo uk-visible-large" ui-sref="home"><div class="uk-navbar-brand"><span class="uk-text-primary">FG</span>Bikes</div></a>
+	<a class="bh-logo-small uk-hidden-large" ui-sref="home"><div class="uk-navbar-brand"><span class="uk-text-primary">FG</span>Bikes</div></a>
+	<nav class="uk-navbar uk-text-center">
+		<div class="bh-navbar-nav-wrapper uk-visible-large">
+			<ul class="uk-navbar-nav">
+			</ul>
+		</div>
+		<a href="#offcanvas" class="uk-navbar-toggle uk-hidden-large" data-uk-offcanvas></a>
+	</nav>
+	<div class="bh-toolbar-right">
+		<div class="uk-panel">
+			<ul class="uk-subnav uk-subnav-line">
+				<li>
+					<a href="#offcanvas-cart" data-uk-offcanvas><i class="uk-icon-shopping-cart uk-margin-small-right uk-hidden-small"></i>{{cart_info.summa}} грн. <span class="uk-badge uk-badge-danger uk-badge-notification uk-margin-small-left">{{cart_info.kol}}</span></a>
+				</li>
+				<li class="uk-hidden-small">
+					<a ui-sref="wishlist" title="Лист ожиданий"><i class="uk-icon-heart"></i></a>
+				</li>
+				<li class="uk-hidden-small">
+					<a href="#constructor" data-uk-modal><i class=" uk-icon-cogs"></i></a>
+				</li>
+				<!--<li class="uk-hidden-small">
+					<a href="#"><i class="uk-icon-power-off"></i></a>
+				</li>-->
+			</ul>
+		</div>
+	</div>
+</div>

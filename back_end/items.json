@@ -1,0 +1,134 @@
+[
+	{
+		"id":1,
+		"name":"FG Model №1",
+		"description":"описание",
+		"price":7399,
+		"old_price":8199,
+				
+		"img_url":"http://placehold.it/720x540&text=demo",
+		"img_url_hover":"http://placehold.it/720x540&text=demo",
+		"img_url_mini":"http://placehold.it/100x75&text=demo"
+	},
+	{	
+		"id":2,
+		"name":"FG Model №2",
+		"description":"описание",
+		"price":7399,
+		"old_price":8199,
+		
+		"img_url":"http://placehold.it/720x540&text=demo",
+		"img_url_hover":"http://placehold.it/720x540&text=demo",
+		"img_url_mini":"http://placehold.it/100x75&text=demo"
+	},
+	{	
+		"id":3,
+		"name":"FG Model №3",
+		"description":"описание",
+		"price":7399,
+		"old_price":8199,
+		
+		"img_url":"http://placehold.it/720x540&text=demo",
+		"img_url_hover":"http://placehold.it/720x540&text=demo",
+		"img_url_mini":"http://placehold.it/100x75&text=demo"
+	},
+	{	
+		"id":4,
+		"name":"FG Model №4",
+		"description":"описание",
+		"price":7399,
+		"old_price":8199,
+		
+		"img_url":"http://placehold.it/720x540&text=demo",
+		"img_url_hover":"http://placehold.it/720x540&text=demo",
+		"img_url_mini":"http://placehold.it/100x75&text=demo"
+	},
+	{	
+		"id":5,
+		"name":"FG Model №5",
+		"description":"описание",
+		"price":7399,
+		"old_price":8199,
+		
+		"img_url":"http://placehold.it/720x540&text=demo",
+		"img_url_hover":"http://placehold.it/720x540&text=demo",
+		"img_url_mini":"http://placehold.it/100x75&text=demo"
+	},
+	{	
+		"id":6,
+		"name":"FG Model №6",
+		"description":"описание",
+		"price":7399,
+		"old_price":8199,
+		
+		"img_url":"http://placehold.it/720x540&text=demo",
+		"img_url_hover":"http://placehold.it/720x540&text=demo",
+		"img_url_mini":"http://placehold.it/100x75&text=demo"
+	},
+	{	
+		"id":7,
+		"name":"FG Model №7",
+		"description":"описание",
+		"price":7399,
+		"old_price":8199,
+		
+		"img_url":"http://placehold.it/720x540&text=demo",
+		"img_url_hover":"http://placehold.it/720x540&text=demo",
+		"img_url_mini":"http://placehold.it/100x75&text=demo"
+	},
+	{	
+		"id":8,
+		"name":"FG Model №8",
+		"description":"описание",
+		"price":7399,
+		"old_price":8199,
+		
+		"img_url":"http://placehold.it/720x540&text=demo",
+		"img_url_hover":"http://placehold.it/720x540&text=demo",
+		"img_url_mini":"http://placehold.it/100x75&text=demo"
+	},
+	{	
+		"id":9,
+		"name":"FG Model №9",
+		"description":"описание",
+		"price":8999,
+		"old_price":9999,
+		
+		"img_url":"http://placehold.it/720x540&text=demo",
+		"img_url_hover":"http://placehold.it/720x540&text=demo",
+		"img_url_mini":"http://placehold.it/100x75&text=demo"
+	},
+	{	
+		"id":10,
+		"name":"FG Model №10",
+		"description":"описание",
+		"price":8999,
+		"old_price":9999,
+		
+		"img_url":"http://placehold.it/720x540&text=demo",
+		"img_url_hover":"http://placehold.it/720x540&text=demo",
+		"img_url_mini":"http://placehold.it/100x75&text=demo"
+	},
+	{	
+		"id":11,
+		"name":"FG Model №11",
+		"description":"описание",
+		"price":8999,
+		"old_price":9999,
+		
+		"img_url":"http://placehold.it/720x540&text=demo",
+		"img_url_hover":"http://placehold.it/720x540&text=demo",
+		"img_url_mini":"http://placehold.it/100x75&text=demo"
+	},
+	{	
+		"id":12,
+		"name":"FG Model №12",
+		"description":"описание",
+		"price":8999,
+		"old_price":9999,
+		
+		"img_url":"http://placehold.it/720x540&text=demo",
+		"img_url_hover":"http://placehold.it/720x540&text=demo",
+		"img_url_mini":"http://placehold.it/100x75&text=demo"
+	}
+]

@@ -1,0 +1,20 @@
+<div class="uk-panel">
+	<figure class="uk-overlay uk-overlay-hover bh-overlay-image">
+		<a class="uk-position-cover" href=""></a>
+		<img ng-src="{{item.img_url}}" width="720" height="540" alt="Product Image">
+		<img class="bh-overlay-image-hover" ng-src="{{item.img_url_hover}}" width="720" height="540" alt="Product Image Overlay">
+		<figcaption class="uk-overlay-panel uk-overlay-bottom uk-overlay-slide-bottom bh-padding-remove">
+			<div>
+				<div class="uk-button-group uk-width-1-1">
+					<p ng-click="add_to_cart(item)" class="uk-button uk-button-large uk-width-8-10">{{1 == readCartStatus(item.id) ? "Товар уже в корзине" : "Добавить в корзину"}}</p>
+					<p ng-click="set_ls_wishlist(item)" class="uk-button uk-button-large uk-width-2-10" title="Добавить в лист ожиданий"><i class="{{1==readWishList(item.id) ? 'uk-icon-heart': 'uk-icon-heart-o'}}"></i></p>
+				</div>
+			</div>
+		</figcaption>
+	</figure>
+
+	<div class="uk-float-left uk-margin-top">
+		<h3 class="uk-margin-small-bottom uk-link-reset"><a href="#">{{item.name}}</a></h3>
+	</div>
+	<span class="uk-float-right uk-margin-top uk-text-large">{{item.price}} грн.</span>
+</div>

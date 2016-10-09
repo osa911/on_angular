@@ -10483,7 +10483,7 @@ a.bh-link-primary:focus {
 }
 @media (min-width: 960px) {
   .bh-slideshow {
-    margin-top: -100px;
+    margin-top: 0px;
     /* Slidenav */
     /* Caption */
   }
